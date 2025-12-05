@@ -1,0 +1,11 @@
+# config/packages/nelmio_api_doc.yaml
+nelmio_api_doc:
+    documentation:
+        info:
+            title: My Awesome API
+            description: This is an awesome app's API documentation!
+            version: 1.0.0
+        areas:
+            path_patterns: # an array of regexps
+                - ^/api(?!/doc$) # Exclude the doc route itself
+    # ...
